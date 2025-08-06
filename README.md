@@ -44,6 +44,7 @@ docker run --gpus all -it open-clip:ubuntu python /usr/src/example.py
 4. 결과 출력
 
 ### 출력 예시
+![](docs/CLIP.png)
 ```
 Label probs: tensor([[9.9950e-01, 4.1207e-04, 8.5317e-05]])
 ```
