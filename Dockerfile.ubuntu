@@ -1,0 +1,32 @@
+FROM ubuntu:22.04
+
+ENV DEBIAN_FRONTEND=noninteractive
+ENV PYTHONUNBUFFERED=1
+
+WORKDIR /usr/src
+
+RUN apt-get update && apt-get install -y \
+    python3 \
+    python3-pip \
+    python3-dev \
+    git \
+    wget \
+    build-essential \
+    && rm -rf /var/lib/apt/lists/*
+
+RUN ln -s /usr/bin/python3 /usr/bin/python
+
+RUN pip3 install --no-cache-dir \
+    torch \
+    torchvision \
+    torchaudio
+
+RUN pip3 install --no-cache-dir \
+    open-clip-torch \
+    pillow \
+    transformers \
+    timm
+
+COPY . /usr/src/
+
+CMD ["python"]
