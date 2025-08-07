@@ -45,5 +45,5 @@ docker run --gpus all open-clip:ubuntu python /usr/src/example.py
 Loading ViT-B-32 (laion2b_s34b_b79k) model from OpenCLIP
 Label probs: tensor([[9.9950e-01, 4.1207e-04, 8.5317e-05]])
 ```
-이미지가 "a diagram"으로 99.95% 확률로 분류됨
-별도 저장되는 파일 없이, stdout에서 결과를 확인할 수 있습니다.
+- 이미지가 "a diagram"으로 99.95% 확률로 분류되었음을 의미합니다/
+- stdout에서 결과를 바로 확인할 수 있습니다. (본 예제에는 별도로 저장되는 출력물 파일이 없습니다)
