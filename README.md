@@ -42,7 +42,7 @@ docker run --gpus all open-clip:ubuntu python /usr/src/example.py
 ### 출력 예시 및 결과
 ![](docs/CLIP.png)
 ```
-Load ViT-B-32 (laion2b_s34b_b79k) model from OpenCLIP
+Loading ViT-B-32 (laion2b_s34b_b79k) model from OpenCLIP
 Label probs: tensor([[9.9950e-01, 4.1207e-04, 8.5317e-05]])
 ```
 이미지가 "a diagram"으로 99.95% 확률로 분류됨
