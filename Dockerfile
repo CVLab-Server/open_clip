@@ -15,4 +15,7 @@ RUN pip install --no-cache-dir \
 
 COPY . /usr/src/
 
+# Download and cache the model during build
+RUN python3 -c "import open_clip; print('Downloading and caching ViT-B-32 model...'); model, _, _ = open_clip.create_model_and_transforms('ViT-B-32', pretrained='laion2b_s34b_b79k'); print('Model cached successfully!')"
+
 CMD ["python"]
