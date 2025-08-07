@@ -1,29 +1,25 @@
-# OpenCLIP 빠른 시작 가이드
-
-OpenCLIP을 Docker 환경에서 빠르게 시작하는 방법을 설명합니다.
+# OpenCLIP 실행 예제
+OpenCLIP을 Docker 환경에서 실행하기 위한 프로젝트입니다.
 
 ## 프로젝트 구조
-```
-open_clip/
-├── Dockerfile          # NVIDIA PyTorch 기반 이미지
-├── Dockerfile.ubuntu   # Ubuntu 기반 이미지
-├── example.py          # 예제 코드
-└── README.md          # 이 문서
-```
+- Dockerfile          # NVIDIA PyTorch 기반 이미지
+- Dockerfile.ubuntu   # Ubuntu 기반 이미지
+- example.py          # 예제 코드
+- README.md          # 이 문서
 
 ## Docker 이미지 빌드
 
-### 옵션 1: NVIDIA PyTorch 이미지 사용 (권장)
+### 방법 1: NVIDIA PyTorch 이미지 사용 (권장)
 ```bash
 docker build -t open-clip:nvidia -f Dockerfile .
 ```
 
-### 옵션 2: Ubuntu 이미지 사용 (예비 및 트러블슈팅용으로 제공)
+### 방법 2: Ubuntu 이미지 사용 (예비 및 트러블슈팅용으로 제공)
 ```bash
 docker build -t open-clip:ubuntu -f Dockerfile.ubuntu .
 ```
 
-## 예제 실행
+## 예제 실행 방법
 
 ### 1. NVIDIA 이미지로 실행
 ```bash
