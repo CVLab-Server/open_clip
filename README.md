@@ -2,8 +2,8 @@
 OpenCLIP을 Docker 환경에서 실행하기 위한 프로젝트입니다.
 
 ## 프로젝트 구조
-- `Dockerfile`: NVIDIA PyTorch 기반 이미지
-- `Dockerfile.ubuntu`: Ubuntu 기반 이미지
+- `Dockerfile`: NVIDIA PyTorch 공식 이미지 기반 Docker 파일
+- `Dockerfile.ubuntu`: Ubuntu 22.04 기반 Docker 파일
 - `example.py`: 예제 코드
 - `_README.md`: 원본 open_clip README 파일
 
